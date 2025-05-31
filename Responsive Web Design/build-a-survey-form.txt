@@ -1,0 +1,146 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Survey Form</title>
+    <link ref="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <h1 id="title">Employee Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    
+    <form id="survey-form">
+      
+      <label id="name-label">Full Name <input id="name" name="name" type="text" placeholder="Enter your full name" required></label>
+      <label id="email-label">Email <input id="email" name="email" type="email" placeholder="Enter your email" required></label>
+      <label id="age-label">Age (optional) <input id="age" name="age" type="number" placeholder="Enter your age" min="18" max="65"></label>
+      <label id="number-label">Employee ID <input id="number" name="number" type="number" placeholder="Enter your Employee ID" min="1" max="100" required></label>
+      
+      <label id="dropdown-label">Which option best describes your current role? 
+        <select id="dropdown" name="dropdown">
+          <option value="">Select an option</option>
+          <option value="1">Full Time</option>
+          <option value="2">Part Time</option>
+        </select>
+      </label>
+      
+      <p id="training-plan">Do you attend training courses?</p>
+      <label for="yearly" class="inline-label"><input id="yearly" name="training-plan" type="radio" class="inline" value="yearly" checked> Yearly</label>
+      <label for="quarterly" class="inline-label"><input id="quarterly" name="training-plan" type="radio" class="inline" value="quarterly"> Quarterly</label>
+      <label for="monthly" class="inline-label"><input id="monthly" name="training-plan" type=radio class="inline" value="monthly"> Monthly</label>
+      
+      <p id="program-language">What programming languages are you using?</p>
+      <label for="python" class="inline-label"><input id="python" type="checkbox" name="program-language" value="python" class="inline"> Python</label>
+      <label for="sql" class="inline-label"><input id="sql" type="checkbox" name="program-language" value="sql" class="inline"> SQL</label>
+      <label for="html" class="inline-label"><input id="html" type="checkbox" name="program-language" value="html" class="inline"> HTML</label>
+      <label for="css" class="inline-label"><input id="css" type="checkbox" name="program-language" value="css" class="inline"> CSS</label>
+
+      <label for="comment" class="comment"> Any comments?
+        <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
+      </label>
+
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+#title {
+  margin: 1em auto;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+#description {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#training-plan {
+  font-family: Tahoma;
+  font-size: 17px;
+}
+
+#program-language {
+  font-family: Tahoma;
+  font-size: 17px;
+}
+
+.comment {
+  font-family: Tahoma;
+  font-size: 17px;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+
+label.inline-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin: 0.25rem 0;
+}
+
+input.inline {
+  width: auto;
+  margin: 0;
+  vertical-align: middle;
+}
+
+
+** end of styles.css **
+

@@ -1,0 +1,71 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A Tribute Page to Marie Curi">
+        <title id="title">Tribute to Marie Curie</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main id="main">
+            <h1>Tribute to Marie Curie</h1>
+            <p>Marie Curie was a pioneering physicist and chemist who conducted groundbreaking research on radioactivity.</p>
+            <figure id="img-div">
+                <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Marie_Curie_c._1920s.jpg" alt="Marie Curie" id="image">
+                <figcaption id="img-caption">Born on November 7, 1867, in Warsaw, Poland, she She was the first woman to win a Nobel Prize, the first person to win a Nobel Prize twice, and the only person to win a Nobel Prize in two scientific fields. </figcaption>
+            </figure>        
+            
+            <h2>Important Life Events of Marie Curie</h2>
+            <ul id="tribute-info">
+                <li>1891: Moved to Paris to study at the University of Paris.</li>
+                <li>1898: Discovered the elements polonium and radium with her husband Pierre Curie.</li>
+                <li>1903: Awarded the Nobel Prize in Physics, shared with Pierre Curie and Henri Becquerel.</li>
+                <li>1911: Awarded the Nobel Prize in Chemistry for her work on radium and polonium.</li>
+                <li>1934: Died from aplastic anemia, likely caused by her prolonged exposure to radiation.</li>
+            </ul>
+            <p><i>Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.</i></p>
+            <p><i>-- Marie Curie</i><p>
+            
+            <h2>If you need more information, please visit her <a id="tribute-link" href="https://en.wikipedia.org/wiki/Marie_Curie" target="_blank">Wikipedia entry</a>.</h2>
+            
+        </main>
+    </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+  margin: 0;
+}
+#main {
+  text-align: center;
+  padding: 20px;
+}
+#tribute-info {
+  text-align: left; /* Overrides center alignment for the list */
+  display: inline-block; /* Optional: keeps list narrower and centered horizontally */
+  text-align: left;
+  margin: 0 auto;
+}
+h1, h2 {
+  margin: 20px 0;
+}
+img {
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+** end of styles.css **
+

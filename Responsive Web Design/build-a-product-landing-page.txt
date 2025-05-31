@@ -1,0 +1,417 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <main id="page-wrapper">
+            <header id="header">
+                <img class="logo" id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="product logo">
+                <h1 class="site-title">Welcome to Our Online Music Store</h1>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a class="nav-link" href="#features">Features</a></li>
+                        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                        <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="hero">
+                <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                    <h2>Stay Updated</h2>
+                    <label for="email">Subscribe to our newsletter:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <input id="submit" type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="container">
+                <section id="features">
+                    <h2>Features</h2>
+                    <p>Our product offers a variety of features to help you achieve your goals.</p>
+                    <div class="grid">
+                        <div class="icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="feature_description">
+                            <h3>Feature 1 : Description of feature 1.</h3>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon">
+                            <i class="fas fa-headphones"></i>
+                        </div>
+                        <div class="feature_description">
+                            <h3>Feature 2 : Description of feature 2.</h3>
+                        </div>
+                    </div>
+                    <div class="grid">
+                        <div class="icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <div class="feature_description">
+                            <h3>Feature 3 : Description of feature 3.</h3>
+                        </div>
+                    </div>
+                    <div class="video-wrapper">
+                        <iframe id="video" src="https://www.youtube.com/embed/2cAYMgR1EpQ" title="Product Video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section id="pricing">
+                    <div class="price_head">
+                    <h2>Pricing</h2>
+                    <p>We offer competitive pricing plans to suit your needs.</p>
+                    </div>
+                    <div class="plans_container">
+                        <div class="product" id="free">
+                            <h3>Free Plan</h3>
+                            <p>Access to basic features.</p>
+                            <p class="price">$0/month</p>
+                            <button class="btn">Sign Up</button>
+                        </div>
+                        <div class="product" id="premium">
+                            <h3>Premium Plan</h3>
+                            <p>Access to all features.</p>
+                            <p class="price">$10/month</p>
+                            <button class="btn">Sign Up</button>
+                        </div>
+                        <div class="product" id="ultimate">
+                            <h3>Ultimate Plan</h3>
+                            <p>Access to all features plus exclusive content.</p>
+                            <p class="price">$20/month</p>
+                            <button class="btn">Sign Up</button>
+                        </div>
+                    </div>    
+                </section>
+                <section id="testimonials">
+                    <h2>Testimonials</h2>
+                    <p>Don't just take our word for it, hear from our satisfied customers.</p>
+                    <blockquote class="testimonial">
+                        <p>"This product has changed my life! The features are amazing and the support is top-notch."</p>
+                        <i>- Happy Customer</i>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"I love the premium plan! It offers everything I need and more."</p>
+                        <i>- Satisfied User</i>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"The ultimate plan is worth every penny. The exclusive content is fantastic!"</p>
+                        <i>- Loyal Subscriber</i>
+                    </blockquote>
+                </section> 
+            </div>
+        </main>
+        <footer id="footer">
+            <p>&copy; 2023 Online Music Store. All rights reserved.</p>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 75px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  z-index: 1000;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+  max-width: 120px;
+}
+
+/* Site Title */
+.site-title {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* Navigation */
+nav {
+  flex: 0 0 auto;
+  font-weight: 400;
+}
+
+#nav-bar ul {
+  display: flex;
+  gap: 15px;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+}
+
+#hero > h2 {
+  margin-bottom: 20px;
+}
+
+#hero input[type='email'] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type='submit'] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  margin: 15px 0;
+  border: 0;
+  background-color: #f1c40f;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#hero input[type='submit']:hover {
+  background-color: orange;
+}
+
+/* Features Section */
+#features {
+  margin-top: 30px;
+}
+
+.grid {
+  display: flex;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: darkorange;
+}
+
+#features .feature_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 5px;
+}
+
+/* Video */
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* Pricing Section */
+.price_head {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.plans_container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.product {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 250px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.product > button {
+  border: none;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product > button:hover {
+  background-color: orange;
+}
+
+/* Testimonials */
+#testimonials {
+  margin-top: 40px;
+}
+
+.testimonial {
+  margin: 20px auto;
+  max-width: 800px;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+/* Buttons */
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px black solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Section Base Styling */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  #nav-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 30px;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #features .icon, #features .feature_description {
+    width: 100%;
+    text-align: center;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 1rem;
+  }
+
+  .logo img {
+    height: 25px;
+  }
+}
+
+
+** end of styles.css **
+

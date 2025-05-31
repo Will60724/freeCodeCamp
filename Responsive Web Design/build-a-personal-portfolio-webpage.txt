@@ -1,0 +1,272 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <nav id="navbar" class="nav">
+                <ul>
+                    <li><a href="#welcome-section">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="welcome-section" class="welcome">
+                <h1>Welcome to My Personal Portfolio</h1>
+                <p>This is a showcase of my work and skills.</p>
+            </section>
+            
+            <section id="about" class="about">
+                <h2>About Me</h2>
+                <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+            </section>
+            
+            <section id="projects" class="projects">
+                <h2 class="project-header">These are some of my projects</h2>
+                <div class="project-container">
+                    <div class="project">
+                        <h3 class="project-title">Project 1</h3>
+                        <p class="project-description">Description of project 1.</p>
+                        <a href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+          target="_blank" class="project-link project-tile">Project 1 Link</a>
+                    </div>
+                    <div class="project">
+                        <h3 class="project-title">Project 2</h3>
+                        <p class="project-description">Description of project 2.</p>
+                        <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project-link project-tile">Project 2 Link</a> 
+                    </div>
+                    <div class="project">
+                        <h3 class="project-title">Project 3</h3>
+                        <p class="project-description">Description of project 3.</p>
+                        <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project-link project-tile">Project 3 Link</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="contact">
+                <h2>Contact</h2>
+                <p>If you would like to get in touch, please email me at <a href="mailto:yourname@example.com" id="profile-link" target="_blank">yourname@example.com</a>.</p>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>Thank you for visiting my portfolio!</p>
+            <p>&copy; 2025 Personal Portfolio</p>
+        </footer>
+
+    </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+      background: #be3144;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 50px;
+}
+
+.nav li {
+    list-style: none;
+    margin: 0 15px;
+    display: inline;
+    
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.nav a:hover {
+    color: blue;
+}
+
+.welcome {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color:#000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.welcome > h1 {
+    font-size: 4.5rem;
+    margin-bottom:1rem;
+    margin-top:2rem;
+    color:white
+}
+
+.welcome > p {
+  font-size: 2.2rem;
+  font-style: italic;
+  color: #be3144;
+}
+
+.about {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    height:30vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+.about p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    text-decoration: underline;
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+    margin: auto;
+    width: 100%;
+    border-bottom: 3px solid red;
+}
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color:white;
+}  
+.contact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color:white;
+    font-style:italic
+}
+
+.footer {
+    text-align: center;
+    background-color: gray;
+    color: white;
+    height: auto;
+    width: 100%;
+    margin-bottom:0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color:white;
+    font-style:italic
+}
+
+.projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #45567d;
+}
+
+.project-header {
+    max-width: 1000px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #f0f0f0;
+
+}
+
+.projects h2 {
+    font-size: 3.5rem;
+    color: #f0f0f0;
+}
+
+.project-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: row;
+}
+
+.project {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 250px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 10px;
+    color:white;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}   
+.project-description {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.project-link {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+** end of styles.css **
+
