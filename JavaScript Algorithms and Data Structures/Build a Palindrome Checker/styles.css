@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #0a0a23;
+    color: #ffffff;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 10px 0;
+}
+
+.container {
+    width: min(100vw, 450px);
+    min-height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+    box-shadow: 0 6px 6px #002ead;
+}
+
+.title-label {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #0a0a23;
+}
+
+.input-group {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+    gap: 10px; /* Space between input and button */
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#text-input {
+    height: 35px;
+    width: 250px;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid #5a01a7;
+    color: black;
+}
+
+
+.checkButton {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 1rem;
+    background-color: #5a01a7;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.result {
+    overflow-y: auto;
+    word-wrap: break-word;
+    min-height: 50px;
+    color: black;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px; 
+    margin-top: 10px;
+    text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+#definition {
+    width: min(100vw, 450px);
+    font-size: 1.3rem;
+    min-height: 140px;
+    background-color: #00471b;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: block;
+}
+
+.def-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.def-content {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    margin-top: auto;
+    padding: 20px 0;
+    text-align: center;
+}
