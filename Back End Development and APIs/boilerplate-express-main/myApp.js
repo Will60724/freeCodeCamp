@@ -4,8 +4,8 @@ let bodyParser=require('body-parser');
 let express = require('express');
 let app = express();
 
-absolutePath = __dirname + '/views/index.html';
-assetPath = __dirname + '/public';
+const absolutePath = __dirname + '/views/index.html';
+const assetPath = __dirname + '/public';
 
 app.listen(3000, () => {
   console.log("Server is listening on port 3000");
